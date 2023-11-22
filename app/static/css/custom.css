@@ -179,24 +179,90 @@ body {
   color: #0085ff;
 }
 
+.admin-link:hover {
+  background-color: #d1d1d1;
+  color: #003d7a;
+
+}
+
 /* ===== Markdown custom end ==== */
 
-/* Light mode */
+/* Dark/light mode toggle */
+
+/* Mode Toggle Button*/
+#modeToggle {
+  background-color: #333333;
+  color: #FFFFFF;
+  transition: background-color 0.3s, color 0.3s;
+}
 
 #modeToggle:hover {
   background-color: white;
   color: black;
 }
 
+/* Light Mode - General Styles */
+
+body.light-mode,
+body.light-mode p,
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode h4,
+body.light-mode h5,
+body.light-mode h6,
+body.light-mode ul,
+body.light-mode ol,
+body.light-mode li,
+body.light-mode em,
+body.light-mode strong,
+body.light-mode .custom-link {
+  color: #000000;
+}
+
+body.light-mode a {
+  color: #0085ff;
+}
+
+
 body.light-mode {
   background-color: #ffffff;
   color: #000000;
 }
 
-.light-mode .navbar {
+body.light-mode hr {
+  border-color: #000000;
+}
+
+body.light-mode .navbar {
   background-color: #f0f0f0;
 }
 
-.light-mode .custom-link {
-  color: black;
+body.light-mode .navbar .navbar-item .admin-link {
+  background-color: #E8E8E8;
+  color: #0056b3;
+  border: 1px solid #d1d1d1;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode .admin-link:hover {
+  background-color: #d1d1d1;
+  color: #003d7a;
+}
+
+/* Light Mode - Mode Toggle Button */
+body.light-mode #modeToggle {
+  background-color: #E8E8E8;
+  color: #333333;
+  border: 1px solid #d1d1d1;
+}
+
+body.light-mode #modeToggle:hover {
+  background-color: #d1d1d1;
+  color: #1a1a1a;
+}
+
+body.light-mode .admin-link .icon,
+body.light-mode #modeToggle .icon {
+  color: inherit;
 }
