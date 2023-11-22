@@ -99,13 +99,8 @@ function setActiveTabOnLoad() {
 function fetchAndDisplayMarkdown(tabName) {
   const converter = new showdown.Converter();
   const markdownFileMapping = {
-<<<<<<< HEAD:app/static/js/script.js
     "Beta": "/static/md/beta-2023h.md",
     "BetaDev": "/static/md/betadev-2023h.md"
-=======
-    "Beta": "beta-2023h",
-    "BetaDev": "betadev-2023h"
->>>>>>> 4861cd6e333b62b50ea1741b28eaebbb8a0accf9:app/static/js/js/script.js
   };
   const markdownFilename = markdownFileMapping[tabName];
   if (!markdownFilename) {
@@ -114,7 +109,7 @@ function fetchAndDisplayMarkdown(tabName) {
   }
 
   // Update the fetch URL to point to your Flask server's route
-  fetch(`/posts/save/${markdownFilename}`)
+  fetch(markdownFilename)
     .then((response) => {
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -144,3 +139,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+/* Light/Dark mode */
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  const modeToggle = document.getElementById('modeToggle');
+  modeToggle.addEventListener('click', function () {
+    document.body.classList.toggle('light-mode');
+    this.innerHTML = document.body.classList.contains('light-mode') ?
+      '<span class="icon"><i class="fas fa-moon"></i></span>' :
+      '<span class="icon"><i class="fas fa-sun"></i></span>';
+  });
+});

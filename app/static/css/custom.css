@@ -111,7 +111,14 @@ body {
 
 .navbar {
   background-color: black;
+  background-color: black;
+  justify-content: space-between;
+}
 
+.navbar-start .navbar-item,
+.navbar-end .navbar-item {
+  margin-right: 10px;
+  /* Adjust spacing as needed */
 }
 
 @media (max-width: 768px) {
@@ -172,4 +179,24 @@ body {
   color: #0085ff;
 }
 
-/* ===== Markdown custom end */
+/* ===== Markdown custom end ==== */
+
+/* Light mode */
+
+#modeToggle:hover {
+  background-color: white;
+  color: black;
+}
+
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.light-mode .navbar {
+  background-color: #f0f0f0;
+}
+
+.light-mode .custom-link {
+  color: black;
+}
