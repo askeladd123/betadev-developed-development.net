@@ -1,3 +1,13 @@
+body {
+  background-color: #0d0d0d;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  overflow-y: scroll;
+}
+
 .btn {
   background-color: transparent;
   border: none;
@@ -81,19 +91,12 @@ button:hover {
   margin-top: 10px;
 }
 
-body {
-  background-color: #0d0d0d;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: fixed;
-  overflow-y: scroll;
+.tabs {
+  width: 100%;
 }
 
 .tabs .custom-link {
   color: white;
-
 }
 
 .tabs .custom-link:hover {
@@ -102,12 +105,30 @@ body {
 
 .tabs ul {
   display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-left: 0;
   flex-wrap: nowrap;
   overflow-x: auto;
   flex-direction: row;
   overflow-y: hidden;
   margin-top: 5rem;
 }
+
+.tabs li {
+  flex: 1 0 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.tabs a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
 
 .navbar {
   background-color: black;
@@ -137,6 +158,22 @@ body {
 
 
 /* ===== Markdown custom start ===== */
+
+.markdown-content {
+  background-color: #131E29;
+  margin: auto;
+  width: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+body.light-mode #markdown-content {
+  background-color: #f0f0f0;
+  color: #000000;
+}
+
 .custom-markdown ul {
   list-style-type: none;
   color: #ffffff;
@@ -258,11 +295,19 @@ body.light-mode #modeToggle {
 }
 
 body.light-mode #modeToggle:hover {
-  background-color: #d1d1d1;
-  color: #1a1a1a;
+  background-color: #000000;
+  color: #E8E8E8
 }
 
 body.light-mode .admin-link .icon,
 body.light-mode #modeToggle .icon {
   color: inherit;
+}
+
+body.light-mode .custom-markdown a {
+  color: red;
+}
+
+body.light-mode .modal-content {
+  background-color: rgba(255, 255, 255, 0.8);
 }
