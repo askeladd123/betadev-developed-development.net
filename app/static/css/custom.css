@@ -91,6 +91,34 @@ button:hover {
   margin-top: 10px;
 }
 
+/* ==== navbar start ==== */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  opacity: 0.75;
+}
+
+.navbar-item {
+  opacity: 1;
+}
+
+.navbar-start,
+.navbar-end {
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+.navbar-end {
+  justify-content: flex-end;
+}
+
+/* ==== navbar end ==== */
+/* ==== tabs start ==== */
 .tabs {
   width: 100%;
 }
@@ -135,26 +163,6 @@ button:hover {
 }
 
 
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  background-color: black;
-}
-
-.navbar-start,
-.navbar-end {
-  display: flex;
-  align-items: center;
-  flex: 1 1 auto;
-}
-
-.navbar-end {
-  justify-content: flex-end;
-}
-
 @media (max-width: 768px) {
   .tabs ul {
     flex-direction: column;
@@ -168,6 +176,7 @@ button:hover {
   }
 }
 
+/* ==== tabs end ==== */
 
 /* ===== Markdown custom start ===== */
 
@@ -273,10 +282,6 @@ body.light-mode {
   color: #000000;
 }
 
-body.light-mode a {
-  color: #0085ff;
-}
-
 body.light-mode hr {
   border-color: #000000;
 }
@@ -287,11 +292,8 @@ body.light-mode .tabs li.is-active .custom-link {
   color: #0085ff;
 }
 
-
-
-
 body.light-mode .custom-link:hover {
-  background-color: #ffffff;
+  background-color: #f0f0f0;
 }
 
 body.light-mode .navbar {
@@ -300,7 +302,7 @@ body.light-mode .navbar {
 
 body.light-mode .navbar .navbar-item .admin-link {
   background-color: #E8E8E8;
-  color: #0056b3;
+  color: #000;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -320,10 +322,6 @@ body.light-mode #modeToggle:hover {
   color: #ffffff;
 }
 
-body.light-mode .admin-link .icon,
-body.light-mode #modeToggle .icon {
-  color: inherit;
-}
 
 body.light-mode .custom-markdown a {
   color: red;
