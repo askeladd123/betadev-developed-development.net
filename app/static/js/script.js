@@ -91,6 +91,7 @@ function setActiveTabOnLoad() {
     fetchAndDisplayMarkdown(activeTab);
   } else {
     // If no tab is set in localStorage, set a default tab as active and render its content
+    openTab("Beta");
     fetchAndDisplayMarkdown("Beta");
   }
 }
@@ -114,7 +115,6 @@ async function fetchAndDisplayMarkdown(tabName) {
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
-    openTab(tabName);
     const markdownContent = await response.text();
     const htmlContent = converter.makeHtml(markdownContent);
     document.getElementById(tabName).querySelector(".custom-markdown").innerHTML = htmlContent;
