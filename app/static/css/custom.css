@@ -88,7 +88,7 @@
   /* Neutral white */
 
   /* Light mode colors */
-  --light-mode-text: #000000;
+  --black: #000000;
   /* Light mode text color */
   --light-mode-secondary-bg: #f2f2f2;
   /* Light mode secondary background */
@@ -190,6 +190,7 @@ a {
   color: var(--primary-700);
 }
 
+
 .is-uia-red {
   color: var(--accent-color-red);
 }
@@ -209,7 +210,7 @@ button:hover {
 }
 
 .is-beta-white {
-  color: var(--background-color);
+  color: var(--white);
 }
 
 .icon-center {
@@ -241,6 +242,10 @@ button:hover {
   border: none;
   border-radius: 4px;
   width: 50%;
+}
+
+.header-title {
+  color: var(--white);
 }
 
 @media screen and (max-width: 768px) {
@@ -449,13 +454,24 @@ body.light-mode li,
 body.light-mode em,
 body.light-mode strong,
 body.light-mode .custom-link {
-  color: var(--light-mode-text);
+  color: var(--black);
 }
 
-body.light-mode .header-title h1,
-body.light-mode .header-title h2 {
-  color: var(--primary-800);
+body.light-mode .header-title h1 {
+  color: var(--black);
 }
+
+body.light-mode a {
+  color: var(--primary-700);
+}
+
+body.light-mode a:hover {
+  color: var(--blue-grey-600);
+}
+
+/* body.light-mode .header-title {
+  color: var(--primary-800);
+} */
 
 /* Navbar light mode */
 
