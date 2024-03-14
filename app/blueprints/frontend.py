@@ -71,3 +71,8 @@ def okt23_maks_uflaks_crime_download(filename):
 @frontend_blueprint.route("/game-jam-entries/okt23-maks-uflaks/klaus-the-klutz/<path:filename>")
 def okt23_maks_uflaks_klaus_the_klutz(filename):
     return send_from_directory("./game-jam-entries/okt23-maks-uflaks/klaus-the-klutz/", filename)
+
+@frontend_blueprint.route("/betadev/game-jam-2024")
+def game_jam_2024():
+    content = read_markdown("game-jam-2024")
+    return render_template("game-jam-2024.html", content=content)
