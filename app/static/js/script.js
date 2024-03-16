@@ -1,71 +1,71 @@
-const modal1 = document.getElementById("myModal1");
-const btn1 = document.getElementById("myBtn1");
-const closeBtn1 = document
-  .getElementById("myModal1")
-  .getElementsByClassName("close")[0];
+// const modal1 = document.getElementById("myModal1");
+// const btn1 = document.getElementById("myBtn1");
+// const closeBtn1 = document
+//   .getElementById("myModal1")
+//   .getElementsByClassName("close")[0];
 
-const modal2 = document.getElementById("myModal2");
-const btn2 = document.getElementById("myBtn2");
-const closeBtn2 = document
-  .getElementById("myModal2")
-  .getElementsByClassName("close")[0];
+// const modal2 = document.getElementById("myModal2");
+// const btn2 = document.getElementById("myBtn2");
+// const closeBtn2 = document
+//   .getElementById("myModal2")
+//   .getElementsByClassName("close")[0];
 
-const modal3 = document.getElementById("myModal3");
-const btn3 = document.getElementById("myBtn3");
-const closeBtn3 = document
-  .getElementById("myModal3")
-  .getElementsByClassName("close")[0];
+// const modal3 = document.getElementById("myModal3");
+// const btn3 = document.getElementById("myBtn3");
+// const closeBtn3 = document
+//   .getElementById("myModal3")
+//   .getElementsByClassName("close")[0];
 
 const navbarDOM = document.querySelector(".navbar")
 
-const markdownContainerDOM = document.querySelector(".markdown-container");
+// const markdownContainerDOM = document.querySelector(".markdown-container");
 
-const openHamDOM = document.querySelector("#openHam");
-const closeHamDOM = document.querySelector("#closeHam");
-const navigationItemsDOM = document.querySelector("#navigation-items");
+// const openHamDOM = document.querySelector("#openHam");
+// const closeHamDOM = document.querySelector("#closeHam");
+// const navigationItemsDOM = document.querySelector("#navigation-items");
 
 // Open Modal 1
-btn1.onclick = function () {
-  modal1.style.display = "block";
-};
+// btn1.onclick = function () {
+//   modal1.style.display = "block";
+// };
 
 // Close Modal 1
-closeBtn1.onclick = function () {
-  modal1.style.display = "none";
-};
+// closeBtn1.onclick = function () {
+//   modal1.style.display = "none";
+// };
 
 // Open Modal 2
-btn2.onclick = function () {
-  modal2.style.display = "block";
-};
+// btn2.onclick = function () {
+//   modal2.style.display = "block";
+// };
 
 // Close Modal 2
-closeBtn2.onclick = function () {
-  modal2.style.display = "none";
-};
+// closeBtn2.onclick = function () {
+//   modal2.style.display = "none";
+// };
 
 // Open Modal 3
-btn3.onclick = function () {
-  modal3.style.display = "block";
-};
+// btn3.onclick = function () {
+//   modal3.style.display = "block";
+// };
 
 // Close Modal 3
-closeBtn3.onclick = function () {
-  modal3.style.display = "none";
-};
+// closeBtn3.onclick = function () {
+//   modal3.style.display = "none";
+// };
 
 // Close modals when clicked outside of the modals
-window.onclick = function (event) {
-  if (
-    event.target == modal1 ||
-    event.target == modal2 ||
-    event.target == modal3
-  ) {
-    modal1.style.display = "none";
-    modal2.style.display = "none";
-    modal3.style.display = "none";
-  }
-};
+// window.onclick = function (event) {
+//   if (
+//     event.target == modal1 ||
+//     event.target == modal2 ||
+//     event.target == modal3
+//   ) {
+//     modal1.style.display = "none";
+//     modal2.style.display = "none";
+//     modal3.style.display = "none";
+//   }
+// };
 
 
 
@@ -225,34 +225,4 @@ modeToggle.addEventListener("click", function () {
   this.innerHTML = newTheme === "light"
     ? '<span class="icon"><i class="fas fa-moon"></i></span>'
     : '<span class="icon"><i class="fas fa-sun"></i></span>';
-});
-
-let isMenuOpen = false;
-
-const hamburgerEvent = (nav, close, open) => {
-  navigationItemsDOM.style.display = nav;
-  closeHamDOM.style.display = close;
-  openHamDOM.style.display = open;
-  isMenuOpen = nav === "flex";
-};
-
-openHamDOM.addEventListener("click", () =>
-  hamburgerEvent("flex", "block", "none")
-);
-closeHamDOM.addEventListener("click", () =>
-  hamburgerEvent("none", "none", "block")
-);
-
-window.addEventListener("resize", () => {
-  if (window.innerWidth > 768) {
-    hamburgerEvent("flex", "none", "block");
-  } else if (window.innerWidth < 768) {
-    hamburgerEvent("none", "none", "block");
-  }
-});
-
-window.addEventListener("DOMContentLoaded", () => {
-  if (screen.width < 768) {
-    hamburgerEvent("none", "none", "block");
-  }
 });
