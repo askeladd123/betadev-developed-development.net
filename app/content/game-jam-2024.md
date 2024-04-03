@@ -1,6 +1,4 @@
-Torsdag **21. mars** starter Game Jam. For å være med trenger du kun å møte opp med spillet ditt på siste dagen, på kåringen. Dette skjer fredag **5. april** kl 20:00 på Bluebox sammen med BetaLAN. Gjerne meld deg opp [her](https://forms.office.com/e/dcuK360E8p), så har vi en måte å kontakte deg på.
-
-For de som vil, har vi oppstart på torsdag **kl 18:15 i rom A2 021** med pizza. Her finner vi på ideer sammen, og hjelper hverandre med å komme i gang. Her kan man også se etter en gruppe å jobbe med.
+Torsdag **21. mars** starter Game Jam. For å være med trenger du kun å møte opp med spillet ditt på siste dagen, på kåringen. Dette skjer fredag **5. april** på Bluebox sammen med BetaLAN. Lager du spill, gjerne møt opp 19:15, så kan du gjøre deg klar. Vil du bare prøve spill og stemme, møt opp litt seinere. Kåringen blir 21:00. Gjerne meld deg opp [her](https://forms.office.com/e/dcuK360E8p), så har vi en måte å kontakte deg på. 
   
 ## Hva er game jam
 Game Jam er en sprint i å lage spill. Du har to uker på deg, på starten får alle *tema*, også jobber du helt til kåringen på slutten. Tema er likt for alle, og kan være et enkelt ord. Eksempler fra [Global Game Jam](https://globalgamejam.org/history): *deception, repair, duality*.
