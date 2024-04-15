@@ -3,7 +3,7 @@
 {% block title %}TITTEL{% endblock %}
 
 {% block content %}
-<section class="section is-large is-mobile">
+<!-- <section class="section is-large is-mobile">
   <div class="columns is-10">
     <div class="column has-text-centered">
       <img src="{{url_for('static', filename='img/smallbeta.png')}}" class="is-128x128 logo" alt="Beta logo">
@@ -17,7 +17,53 @@
       </div>
     </div>
   </div>
+</section> -->
+<div class="container bg-body-secondary">
+  <img src="{{url_for('static', filename='img/Beta_blue_1.png')}}" alt="Beta logo" class="img-fluid">
+  <form action="" novalidate>
+    <div class="form-floating">
+      <input type="email" id="email" class="form-control" placeholder="example@outlook.com" required>
+      <label for="email" class="form-label">Email</label>
+      <div class="invalid-feedback">Invalid email</div>
+      <div class="valid-feedback">Valid email</div>
+      <button type="submit" class="btn btn-primary">
+        Submit
+      </button>
+    </div>
+  </form>
+  <div class="card" style="width: 300px">
+    <img src="{{ url_for('static', filename='img/smallbeta.png') }}" alt="" class="card-img-top" style="width: 10vw;">
+    <div class="card-body">
+      <h2 class="card-title">Title</h2>
+      <span class="card-subtitle">Subtitle</span>
+      <div class="card-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut impedit cum sed quas cumque eligendi quibusdam quo
+        a
+        molestias illum?
+      </div>
+    </div>
+  </div>
 
-</section>
+  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Open</button>
+  <div class="modal fade" id="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">Title</div>
+        <div class="modal-body">Body</div>
+        <div class="modal-footer">Footer</div>
+        <button class="btn btn-primary" data-bs-dismiss="#modal"></button>
+      </div>
+    </div>
+  </div>
+
+
+  <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#row" aria-expanded="false"
+    aria-controls="row">Toggle</button>
+  <div class="row collapse" id="row">
+    <div class="col">
+      <div class="box"></div>
+    </div>
+  </div>
+</div>
 <div>{{ content|safe }}</div>
 {% endblock %}
