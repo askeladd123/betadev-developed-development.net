@@ -14,6 +14,12 @@
     --primary-900: #0D579B;
 }
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     margin-top: 40px;
 }
@@ -26,6 +32,18 @@ body::before {
     position: fixed;
     top: 0;
     right: 0;
+}
+
+.social a {
+    text-decoration: none;
+}
+
+.social i {
+    transition: color 0.3s ease;
+}
+
+.social i:hover {
+    color: var(--primary-200);
 }
 
 .logo {
@@ -52,6 +70,18 @@ body::before {
 .card {
     margin: 15px;
     /* Adds space between cards */
+}
+
+.footer-hr {
+    width: 60px;
+    background-color: #7c4dff;
+    height: 2px;
+}
+
+#footer {
+    flex-shrink: 0;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
 }
 
 @media (max-width: 768px) {
