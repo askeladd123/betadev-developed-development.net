@@ -1,6 +1,6 @@
 {% extends "components/base.html" %}
 
-{% block title %}TITTEL{% endblock %}
+{% block title %}BETA{% endblock %}
 
 {% block content %}
 <!-- <section class="section is-large is-mobile">
@@ -18,8 +18,8 @@
     </div>
   </div>
 </section> -->
-<div class="container bg-body-secondary">
-  <img src="{{url_for('static', filename='img/Beta_blue_1.png')}}" alt="Beta logo" class="img-fluid">
+<div class="container">
+  <img src="{{url_for('static', filename='img/Beta_blue_1.png')}}" alt="Beta logo" class="img-responsive img-fluid">
   <form action="" novalidate>
     <div class="form-floating">
       <input type="email" id="email" class="form-control" placeholder="example@outlook.com" required>
@@ -31,18 +31,51 @@
       </button>
     </div>
   </form>
-  <div class="card" style="width: 300px">
-    <img src="{{ url_for('static', filename='img/smallbeta.png') }}" alt="" class="card-img-top" style="width: 10vw;">
-    <div class="card-body">
-      <h2 class="card-title">Title</h2>
-      <span class="card-subtitle">Subtitle</span>
-      <div class="card-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut impedit cum sed quas cumque eligendi quibusdam quo
-        a
-        molestias illum?
+  <div class="card-group hover-shadow border-1">
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/Betasec_sort.png') }}" alt="" class="card-img-top">
+      <div class="card-body">
+        <h2 class="card-title">Title</h2>
+        <span class="card-subtitle">Subtitle</span>
+        <div class="card-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut impedit cum sed quas cumque eligendi quibusdam
+          quo
+          a
+          molestias illum?
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/Betadev_sort.png') }}" alt="Betadev logo" class="card-img-top">
+      <div class="card-body">
+        <h2 class="card-title">Title</h2>
+        <span class="card-subtitle">Subtitle</span>
+        <div class="card-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut impedit cum sed quas cumque eligendi quibusdam
+          quo
+          a
+          molestias illum?
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/Betalan_sort.png') }}" alt="Betadev logo" class="card-img-top">
+      <div class="card-body">
+        <h2 class="card-title">Title</h2>
+        <span class="card-subtitle">Subtitle</span>
+        <div class="card-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut impedit cum sed quas cumque eligendi quibusdam
+          quo
+          a
+          molestias illum?
+        </div>
       </div>
     </div>
   </div>
+
+
+
+
 
   <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Open</button>
   <div class="modal fade" id="modal">

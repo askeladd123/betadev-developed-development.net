@@ -1,70 +1,35 @@
-<!-- <header>
-  <nav class="navbar is-black" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-
-    <div id="navMenu" class="navbar-menu">
-      <div class="navbar-start">
-        <a href="#" class="navbar-item is-tab">
-          Hjem
-        </a>
-
-        <a href="#" class="navbar-item is-tab">
-          Arrangementer
-        </a>
-
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a href="#" class="navbar-link">Interessegrupper</a>
-          <div class="navbar-dropdown is-hidden-mobile is-boxed">
-            <a href="/game-jam-entries" class="navbar-item">Utvikling</a>
-            <a href="#" class="navbar-item">Sikkerhet</a>
-            <a href="#" class="navbar-item">Bedriftskontakt</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <a id="modeToggle" class="bd-tw-button button">
-            <span class="icon">
-              <i class="fas fa-sun"></i>
-            </span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </nav>
-</header> -->
-
-
-
-
-<nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm sticky-top">
-  <div class="container">
-    <div class="d-flex align-items-center">
-      <button class="btn btn-primary me-2" type="button" id="dropdownMenuButtonLight" data-bs-toggle="dropdown"
-        aria-expanded="false">
-        <i class="fas fa-gear"></i>
-      </button>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="nav">
-      <ul class="navbar-nav ms-auto">
+<nav class="navbar navbar-expand-lg bd-navbar sticky-top bg-light shadow-sm" aria-label="Main navigation">
+  <div class="container-fluid">
+    <a href="/" class="navbar-brand">
+      <img src="{{url_for('static', filename='img/Beta_blue_b.png')}}" style="width: 40px; height: 40px;"
+        class="rounded-pill" alt="Beta logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+        </path>
+      </svg>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+      <ul class="navbar-nav">
         <li class="nav-item">
-          <a href="#" class="nav-link active" aria-current="page">Home</a>
+          <a href="#" class="nav-link">Arrangementer</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Store</a>
+          <a href="#" class="nav-link">Karriere</a>
+        </li>
+        <li class="nav-item">
+          <!-- Dropdown -->
+          <a href="#" class="nav-link">Interessegrupper</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+
+<!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor" viewBox="0 0 16 16">
+  <path fill-rule="evenodd"
+    d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+  </path>
+</svg> -->

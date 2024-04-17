@@ -16,7 +16,6 @@
 
 body {
     margin-top: 40px;
-    /* This margin just makes the text easier to read. You can remove it if you want since it can mess with your other styles. */
 }
 
 body::before {
@@ -28,6 +27,47 @@ body::before {
     top: 0;
     right: 0;
 }
+
+.logo {
+    max-height: 10vh;
+    max-width: 10vw;
+}
+
+.nav-logo {
+    height: 40px;
+    width: 40px;
+}
+
+.card-img-top {
+    width: 100%;
+    /* Ensures the image is responsive and fits the card */
+    height: auto;
+    /* Maintains the aspect ratio */
+    object-fit: cover;
+    /* Covers the area without distorting the image */
+    max-height: 200px;
+    /* Optional: limits the image height */
+}
+
+.card {
+    margin: 15px;
+    /* Adds space between cards */
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+.hover-shadow>* {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.hover-shadow> :hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
 
 /* This box class is purely used for explaining how the bootstrap grid system works. */
 .box {
@@ -56,34 +96,34 @@ body::before {
 @media (min-width: 576px) {
     body::before {
         content: "SM";
-        z-index: 1;
+        z-index: 10000;
     }
 }
 
 @media (min-width: 768px) {
     body::before {
         content: "MD";
-        z-index: 1;
+        z-index: 10000;
     }
 }
 
 @media (min-width: 992px) {
     body::before {
         content: "LG";
-        z-index: 1;
+        z-index: 10000;
     }
 }
 
 @media (min-width: 1200px) {
     body::before {
         content: "XL";
-        z-index: 1;
+        z-index: 10000;
     }
 }
 
 @media (min-width: 1400px) {
     body::before {
         content: "XXL";
-        z-index: 1;
+        z-index: 10000;
     }
 }
